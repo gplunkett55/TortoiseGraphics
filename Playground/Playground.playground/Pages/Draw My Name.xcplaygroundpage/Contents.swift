@@ -5,7 +5,7 @@ import TortoiseGraphics
 import CoreGraphics
 
 let canvas = PlaygroundCanvas(frame: CGRect(x: 0, y: 0, width: 500, height: 500))
-canvas.frameRate = 50
+canvas.frameRate = 100
 canvas.color = .white
 PlaygroundPage.current.liveView = canvas
 
@@ -25,13 +25,14 @@ canvas.drawing { turtle in
 
     //Letter i
     turtle.letteri()
-    
+
     //Letter n
     turtle.lettern()
-    
+
     //Set up for last name
     turtle.setuplastname()
     
+
     
     
 

@@ -183,4 +183,28 @@ public extension Tortoise {
         self.forward(185)
     }
 
+    //Letter P
+    func letterp() {
+        //stick
+        self.setHeading(10)
+        self.penDown()
+        self.forward(75)
+        self.setHeading(200)
+
+        //loop
+        self.curve(withsides: 30, withsize: 7, drawsides: 6)
+        self.right(170)
+        self.curve(withsides: -30, withsize: 7, drawsides: 6)
+        self.setHeading(90)
+        self.curve(withsides: 15, withsize: 9, drawsides: 9)
+
+        //connector
+        self.setHeading(110)
+        self.curve(withsides: -30, withsize: 7, drawsides: 6)
+        self.setHeading(180)
+        self.forward(37)
+        self.setHeading(90)
+        self.forward(5)
+    }
+
     }
