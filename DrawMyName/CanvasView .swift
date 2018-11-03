@@ -121,8 +121,9 @@
             t.penDown()
             t.forward(7)
             
+                //Not sure what the prolem was with the extension class. Ask me and I'll explain the issue (it's too hard to exaplin in text). 
             }
-        }
     }
-    
- }
+}
+
+}
