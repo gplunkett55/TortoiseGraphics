@@ -14,23 +14,23 @@ canvas.drawing { turtle in
     turtle.penSize(5)
     turtle.hideTortoise()
 
-//    //Letter G
-//    turtle.letterg()
-//
-//    //Letter a
-//   turtle.lettera()
-//
-//    //Letter v
-//    turtle.letterv()
-//
-//    //Letter i
-//    turtle.letteri()
-//
-//    //Letter n
-//    turtle.lettern()
-//
-//    //Set up for last name
-//    turtle.setuplastname()
+    //Letter G
+    turtle.letterg()
+
+    //Letter a
+   turtle.lettera()
+
+    //Letter v
+    turtle.letterv()
+
+    //Letter i
+    turtle.letteri()
+
+    //Letter n
+    turtle.lettern()
+
+    //Set up for last name
+    turtle.setuplastname()
 
     //Letter P
     turtle.letterp()
@@ -39,5 +39,11 @@ canvas.drawing { turtle in
     turtle.letterl()
     
     //Letter u
+    turtle.letteru()
     
+    //letter n
+    turtle.lettern()
+    
+    //letter k
+    turtle.letterk
 }

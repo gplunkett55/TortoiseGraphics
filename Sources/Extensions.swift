@@ -258,6 +258,7 @@ public extension Tortoise {
         self.penDown()
         self.forward(5)
         self.curve(withsides: -15, withsize: 4, drawsides: 4)
-
+        self.setHeading(90)
     }
-    }
+    
+}
