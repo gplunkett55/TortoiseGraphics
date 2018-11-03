@@ -185,6 +185,7 @@ public extension Tortoise {
 
     //Letter P
     func letterp() {
+
         //stick
         self.setHeading(10)
         self.penDown()
@@ -207,4 +208,56 @@ public extension Tortoise {
         self.forward(5)
     }
 
+    //Letter l
+    func letterl() {
+
+        //start of loop
+        self.left(20)
+        self.curve(withsides: -30, withsize: 5, drawsides: 3)
+
+        //loop
+        self.left(5)
+        self.curve(withsides: -40, withsize: 6, drawsides: 2)
+        self.curve(withsides: -20, withsize: 6, drawsides: 2)
+        self.curve(withsides: -6, withsize: 4, drawsides: 3)
+        self.right(40)
+        self.curve(withsides: -20, withsize: 6, drawsides: 2)
+        self.curve(withsides: -40, withsize: 6, drawsides: 3)
+
+        //connector
+        self.curve(withsides: -30, withsize: 4, drawsides: 1)
+        self.left(10)
+        self.curve(withsides: -30, withsize: 5, drawsides: 1)
+        self.setHeading(90)
+
+    }
+    //Letter u
+    func letteru() {
+
+        //first side
+        self.left(30)
+        self.curve(withsides: -15, withsize: 5, drawsides: 3)
+        self.penDown()
+        self.forward(7)
+
+        //bottom curve
+        self.left(180)
+        self.penDown()
+        self.forward(7)
+        self.curve(withsides: -15, withsize: 4, drawsides: 3)
+        self.left(20)
+        self.curve(withsides: -15, withsize: 4, drawsides: 3)
+
+        //second side
+        self.curve(withsides: -15, withsize: 4, drawsides: 1)
+        self.penDown()
+        self.forward(5)
+
+        //connector
+        self.left(180)
+        self.penDown()
+        self.forward(5)
+        self.curve(withsides: -15, withsize: 4, drawsides: 4)
+
+    }
     }
