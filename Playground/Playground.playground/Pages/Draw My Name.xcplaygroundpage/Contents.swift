@@ -43,7 +43,4 @@ canvas.drawing { turtle in
     
     //letter n
     turtle.lettern()
-    
-    //letter k
-    turtle.letterk
 }
