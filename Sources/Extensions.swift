@@ -40,37 +40,37 @@ public extension Tortoise {
     }
 
     // LetterG
-    func letterg() {
+    func letterg(scaleFactor scale: Double = 1.0) {
 
     //set up
     self.penUp()
     self.setHeading(270)
-    self.forward(175)
+    self.forward(175 * scale)
     self.setHeading(0)
 
     //start of G
     self.right(65)
-    self.curve(withsides: -40, withsize: 10, drawsides: 7)
+    self.curve(withsides: -40, withsize: 10 * scale, drawsides: 7)
 
     // top loop
     self.left(20)
-    self.curve(withsides: -10, withsize: 5, drawsides: 2)
+    self.curve(withsides: -10, withsize: 5 * scale, drawsides: 2)
     self.left(40)
-    self.curve(withsides: -10, withsize: 7, drawsides: 3)
+    self.curve(withsides: -10, withsize: 7 * scale, drawsides: 3)
     self.left(20)
-    self.curve(withsides: -35, withsize: 10, drawsides: 4)
+    self.curve(withsides: -35, withsize: 10 * scale, drawsides: 4)
 
     // line down
     self.right(120)
-    self.curve(withsides: 40, withsize: 10, drawsides: 5)
+    self.curve(withsides: 40, withsize: 10 * scale, drawsides: 5)
     self.right(30)
-    self.curve(withsides: 40, withsize: 7, drawsides: 9)
+    self.curve(withsides: 40, withsize: 7 * scale, drawsides: 9)
 
     //connector line
     self.setHeading(123)
-    self.curve(withsides: -40, withsize: 9, drawsides: 5)
+    self.curve(withsides: -40, withsize: 9 * scale, drawsides: 5)
         self.right(11)
-    self.curve(withsides: -60, withsize: 9, drawsides: 4)
+    self.curve(withsides: -60, withsize: 9 * scale, drawsides: 4)
     self.setY(0)
     self.setHeading(90)
     self.penDown()
@@ -229,7 +229,6 @@ public extension Tortoise {
         self.left(10)
         self.curve(withsides: -30, withsize: 5, drawsides: 1)
         self.setHeading(90)
-        
 
     }
     //Letter u
@@ -261,5 +260,5 @@ public extension Tortoise {
         self.curve(withsides: -15, withsize: 4, drawsides: 4)
         self.setHeading(90)
     }
-    
+
 }
