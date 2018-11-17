@@ -12,22 +12,24 @@ func dashedCircle(with t : Tortoise) {
     
     // Adjust course to the left a bit
     t.penUp()
-    t.forward(10)
-    t.right(5)
-    t.forward(10)
-    t.right(5)
+    t.forward(5)
+    t.right(10)
+    t.forward(5)
+    t.right(10)
     t.hideTortoise()
     
     // Draw a dashed circle
     for _ in 1...36 {
         t.penUp()
-        t.forward(9)
+        t.forward(7)
         t.right(5)
         t.penDown()
-        t.forward(11)
+        t.forward(9)
         t.right(5)
     }
 }
+
+
 
 canvas.drawing { turtle in
     
@@ -40,11 +42,10 @@ canvas.drawing { turtle in
     turtle.penSize(2)
     
     // Draw 18 dashed circles
-    for _ in 1...18 {
+    for _ in 1...21 {
         dashedCircle(with: turtle)
-        turtle.right(10)
+            turtle.right(20)
+            }
+            
     }
-    
-    // Hide the tortoise
-    turtle.hideTortoise()
-}
+
