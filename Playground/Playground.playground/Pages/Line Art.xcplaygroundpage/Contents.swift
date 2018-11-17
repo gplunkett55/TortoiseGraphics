@@ -44,7 +44,7 @@ canvas.drawing { turtle in
     // Draw 18 dashed circles
     for _ in 1...21 {
         dashedCircle(with: turtle)
-            turtle.right(20)
+            turtle.right(30)
             }
             
     }
