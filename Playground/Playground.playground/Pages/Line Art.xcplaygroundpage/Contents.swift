@@ -42,7 +42,7 @@ canvas.drawing { turtle in
     turtle.penSize(2)
     
     // Draw 18 dashed circles
-    for _ in 1...38 {
+    for _ in 1...50 {
         dashedCircle(with: turtle)
             turtle.right(30)
             }
