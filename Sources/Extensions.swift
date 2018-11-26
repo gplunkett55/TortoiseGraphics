@@ -260,5 +260,14 @@ public extension Tortoise {
         self.curve(withsides: -15, withsize: 4, drawsides: 4)
         self.setHeading(90)
     }
+    func frame() {
+//        self.penSize(2)
+        for _ in 1...400{
+        self.setPos(random(500), random(500))
+        self.forward(100)
+        self.right(120)
 
+    }
+
+}
 }
