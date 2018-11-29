@@ -261,11 +261,11 @@ public extension Tortoise {
         self.setHeading(90)
     }
     func frame() {
-//        self.penSize(2)
-        for _ in 1...400{
+        for _ in 1...500 {
+
         self.setPos(random(500), random(500))
-        self.forward(100)
-        self.right(120)
+        self.forward(random(750))
+        self.right(-100)
 
     }
 

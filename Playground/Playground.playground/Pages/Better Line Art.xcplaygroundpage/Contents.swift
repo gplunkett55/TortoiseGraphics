@@ -9,8 +9,9 @@ canvas.color = .white
 PlaygroundPage.current.liveView = canvas
 
 canvas.drawing { turtle in
-    
+    turtle.hideTortoise()
     turtle.frame()
     
     
 }
+
