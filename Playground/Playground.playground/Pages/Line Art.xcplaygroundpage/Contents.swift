@@ -4,7 +4,7 @@ import CoreGraphics
 
 let myFrame = CGRect(x: 0, y: 0, width: 500, height: 500)
 let canvas = PlaygroundCanvas(frame: myFrame)
-canvas.frameRate = 400
+canvas.frameRate = 600
 canvas.color = .white
 PlaygroundPage.current.liveView = canvas
 
@@ -29,7 +29,12 @@ func dashedCircle(with t : Tortoise) {
     }
 }
 
-
+func dashedCircleCool(with t : Tortoise) {
+    for _ in 1...50 {
+        dashedCircle(with: t)
+        t.right(30)
+    }
+}
 
 canvas.drawing { turtle in
     
@@ -42,10 +47,12 @@ canvas.drawing { turtle in
     turtle.penSize(2)
     
     // Draw 18 dashed circles
-    for _ in 1...50 {
-        dashedCircle(with: turtle)
-            turtle.right(30)
-            }
-            
+    for _ in 1...10 {
+        dashedCircleCool(with: turtle)
+        turtle.right(36)
     }
+    
+    
+}
+
 

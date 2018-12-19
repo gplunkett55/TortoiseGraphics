@@ -10,7 +10,11 @@ canvas.color = .white
 PlaygroundPage.current.liveView = canvas
 
 canvas.drawing { turtle in
-   
-    for _ in 1...10
-    self.
+   turtle.penDown()
+    for _ in 1...6{
+        turtle.forward(50)
+        turtle.left(30)
+    }
+    
+    
 }
